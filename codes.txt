@@ -1,0 +1,8 @@
+nmap -p- <Metasploitable_2_IP>
+rpcinfo -p <target_IP>
+showmount -e <target_IP>
+sudo apt-get install rpcbind nfs-common
+telnet 192.168.99.131 21
+msfconsole
+msfconsole smbclient -L //192.168.99.131
+  
