@@ -1,6 +1,7 @@
 nmap -p- <Metasploitable_2_IP>
 rpcinfo -p <target_IP>
 showmount -e <target_IP>
+set rshot -192.168.24.21
 sudo apt-get install rpcbind nfs-common
 telnet 192.168.99.131 21
 msfconsole
